@@ -44,3 +44,17 @@ const movies = [
 movies.forEach(function(movie){
     console.log(` ${title}: ${ score}/100`)
 });
+
+
+//we can also use this aswell 
+
+
+// movies.forEach((movie) => {
+//     console.log(`${movie.title}: ${movie.score}/100`);
+// });
+
+
+// movies.forEach((movies)=>  console.log(`${movie.title}: ${movie.score}/100`)); //if its a one liner and also has one thing to do u can use this but of u wqnt to put it into twho liners u should use ()
+
+movies.forEach((movies) =>  
+    (console.log(`${movie.title}: ${movie.score}/100`)));
