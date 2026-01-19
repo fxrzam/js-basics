@@ -52,6 +52,10 @@ movies.forEach(function(movie){
     console.log(` ${title}: ${ score}/100`)
 });
 
+movies.map(({title})=>{
+    return `${title}`
+}
+)
 
 //we can also use this aswell 
 
@@ -67,3 +71,24 @@ movies.forEach((movies) =>
     (console.log(`${movie.title}: ${movie.score}/100`)));
 
 
+const movies2 = [
+
+    {
+        title: 'spiderman',
+        score: 3
+    },
+
+        {
+        title: 'Batman',
+        score: 5
+    },
+
+        {
+        title: 'superman',
+        score: 4
+    },
+]
+
+const {title} = aChosenName;  // the title should be a key(a name in the object) 
+// if we also do this const {title: name} = aChosenName; the title in the object will be changed to name
+// adding default value to an object title = " whatever u want here"
