@@ -1,6 +1,13 @@
 const nummbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 
 
+const [first,second,third, ...everything] = results;
+
+//first 1
+//second 2
+//third 3
+// ...everything everything after 3 will be there
+
 function print(element){
     console.log(element);
 }
@@ -58,3 +65,5 @@ movies.forEach(function(movie){
 
 movies.forEach((movies) =>  
     (console.log(`${movie.title}: ${movie.score}/100`)));
+
+
